@@ -31,13 +31,17 @@ function Color() {
         "F",
       ];
       for (let i = 0; i < 6; i++) {
-        newColor += elements[Math.round(Math.random() * (elements.length - 1))];
+        // use floor() instead of round()
+        // Math.round() 是四舍五入，取决于小数部分。
+        // Math.floor() 始终向下取整。
+        // 0 <= Math.random() < 1
+        newColor += elements[Math.floor(Math.random() * elements.length)];
       }
       setColorGroup({ hex: newColor, rgb: [...colorGroup.rgb] });
     } else {
       newColor = [0, 0, 0];
       for (let i = 0; i < newColor.length; i++) {
-        newColor[i] = Math.round(Math.random() * 255);
+        newColor[i] = Math.floor(Math.random() * 256);
       }
       setColorGroup({ hex: colorGroup.hex, rgb: [...newColor] });
     }
