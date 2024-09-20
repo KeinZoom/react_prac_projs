@@ -1,12 +1,11 @@
 import MenuItem from "./menu_item";
+import "./styles.css";
 
 function MenuList({ getList = [] }) {
-  console.log(getList);
   return (
-    <ul>
+    <ul className="list__container">
       {getList && getList.length
         ? getList.map((getItem, index) => {
-            console.log(getItem);
             return <MenuItem menuItem={getItem} key={index} />;
           })
         : null}

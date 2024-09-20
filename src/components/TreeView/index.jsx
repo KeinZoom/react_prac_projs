@@ -1,9 +1,9 @@
 import MenuList from "./menu_list";
+import "./styles.css";
 
 function TreeView({ MenuData = [] }) {
-  console.log(MenuData);
   return (
-    <div>
+    <div className="tree">
       <MenuList getList={MenuData} />
     </div>
   );
