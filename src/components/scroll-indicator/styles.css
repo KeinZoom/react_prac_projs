@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scrollbar__container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 2px solid #000;
+  background-color: #000;
+  box-shadow: 0 0 7px gray;
+}
+
+.header__container h1 {
+  margin: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.scrollbar__indicator,
+.scrollbar__progress {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  background-color: purple;
+  width: 100%;
+  height: 10px;
+}
