@@ -9,6 +9,8 @@ import menus from "./components/TreeView/data";
 import GenerateQR from "./components/QR-code-generator";
 import LightDarkMode from "./components/light-dark-mode";
 import ScrollIndicator from "./components/scroll-indicator";
+import CustomTab from "./components/custom-tabs/test-tab";
+import CustomModal from "./components/custom-modal/test-modal";
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
       {/* <TreeView MenuData={menus} /> */}
       {/* <GenerateQR /> */}
       {/* <LightDarkMode /> */}
-      <ScrollIndicator url={"https://dummyjson.com/products"} />
+      {/* <ScrollIndicator url={"https://dummyjson.com/products"} /> */}
+      {/* <CustomTab /> */}
+      <CustomModal />
     </div>
   );
 }
