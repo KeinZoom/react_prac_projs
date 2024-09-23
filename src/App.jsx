@@ -11,6 +11,7 @@ import LightDarkMode from "./components/light-dark-mode";
 import ScrollIndicator from "./components/scroll-indicator";
 import CustomTab from "./components/custom-tabs/test-tab";
 import CustomModal from "./components/custom-modal/test-modal";
+import GithubFinder from "./components/Github-profile-finder/GithubFinder";
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <LightDarkMode /> */}
       {/* <ScrollIndicator url={"https://dummyjson.com/products"} /> */}
       {/* <CustomTab /> */}
-      <CustomModal />
+      {/* <CustomModal /> */}
+      <GithubFinder />
     </div>
   );
 }

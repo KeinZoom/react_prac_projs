@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loading p {
+  margin: auto 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.github__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+
+  min-width: 90vw;
+  max-width: 1000px;
+}
+
+.input__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.input__wrapper input {
+  border: none;
+  padding: 0.5rem;
+}
+
+.input__wrapper button {
+  padding: 0.5rem 1rem;
+  background-color: bisque;
+  color: #000;
+  border-radius: 10px;
+}
+
+.user__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.user__avatar img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.user__profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+:is(.user__profile .user__name) a:any-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user__profile .user__date {
+  font-weight: bold;
+}
+
+.user__networking {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 40vh;
+}
+
+:is(.user__repos, .user__follower, .user__following) p {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
