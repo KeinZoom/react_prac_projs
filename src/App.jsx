@@ -12,6 +12,9 @@ import ScrollIndicator from "./components/scroll-indicator";
 import CustomTab from "./components/custom-tabs/test-tab";
 import CustomModal from "./components/custom-modal/test-modal";
 import GithubFinder from "./components/Github-profile-finder/GithubFinder";
+import SearchAutocomplete from "./components/search-autocomplete/SearchAutocomplete";
+import Tictactoe from "./components/TicTacToe/Tictactoe";
+import FeatureFlags from "./components/FeatureFlags";
 
 function App() {
   return (
@@ -28,7 +31,10 @@ function App() {
       {/* <ScrollIndicator url={"https://dummyjson.com/products"} /> */}
       {/* <CustomTab /> */}
       {/* <CustomModal /> */}
-      <GithubFinder />
+      {/* <GithubFinder /> */}
+      {/* <SearchAutocomplete /> */}
+      {/* <Tictactoe /> */}
+      <FeatureFlags />
     </div>
   );
 }
