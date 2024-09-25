@@ -5,6 +5,7 @@ import Tictactoe from "../TicTacToe/Tictactoe";
 import CustomTab from "../custom-tabs/test-tab";
 import Accordian from "../Accordian/Accordian";
 import TreeView from "../TreeView";
+import menus from "../TreeView/data";
 
 function FeatureFlags() {
   const { loading, enableFeatures } = useContext(FeatureFlagsContext);
@@ -20,7 +21,7 @@ function FeatureFlags() {
     },
     {
       key: "treeView",
-      component: <TreeView />,
+      component: <TreeView MenuData={menus} />,
     },
     {
       key: "customTabs",

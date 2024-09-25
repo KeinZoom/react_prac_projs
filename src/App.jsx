@@ -15,6 +15,12 @@ import GithubFinder from "./components/Github-profile-finder/GithubFinder";
 import SearchAutocomplete from "./components/search-autocomplete/SearchAutocomplete";
 import Tictactoe from "./components/TicTacToe/Tictactoe";
 import FeatureFlags from "./components/FeatureFlags";
+import GlobalFeatureFlagsState from "./components/FeatureFlags/context";
+import UseFetchHookTest from "./components/use-fetch-hook/useFetchHookTest";
+import UseOutsideClickTest from "./components/use-outside-click-hook/UseOutsideClickTest";
+import UseWindowResize from "./components/use-windowSize-hook/UseWindowResize";
+import ScrollToTopBottom from "./components/scroll-to-top-bottom";
+import ScrollToParticularSection from "./components/scroll-to-particular-section";
 
 function App() {
   return (
@@ -34,7 +40,14 @@ function App() {
       {/* <GithubFinder /> */}
       {/* <SearchAutocomplete /> */}
       {/* <Tictactoe /> */}
-      <FeatureFlags />
+      {/* <GlobalFeatureFlagsState>
+        <FeatureFlags />
+      </GlobalFeatureFlagsState> */}
+      {/* <UseFetchHookTest /> */}
+      {/* <UseOutsideClickTest /> */}
+      {/* <UseWindowResize /> */}
+      {/* <ScrollToTopBottom /> */}
+      <ScrollToParticularSection />
     </div>
   );
 }
